@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "react-fastapi.fullname" . }}-frontend
+spec:
+  selector:
+    app: frontend
+  ports:
+  - port: {{ .Values.frontend.servicePort }}
+    targetPort: {{ .Values.frontend.servicePort }}
+    type: LoadBalancer

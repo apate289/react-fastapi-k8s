@@ -1,0 +1,5 @@
+apiVersion: v2
+name: react-fastapi
+description: A Helm chart for React + FastAPI sample app
+version: 0.1.0
+appVersion: "1.0.0"
