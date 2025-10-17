@@ -16,13 +16,14 @@ Makefile, .gitignore, and README with usage notes
 > - The GitHub Actions workflow assumes you store `DOCKERHUB_USERNAME`, `DOCKERHUB_TOKEN`, and `KUBE_CONFIG_DATA` (base64-encoded kubeconfig) as secrets.
 > - The Helm chart is parameterized; adjust values in `helm-chart/values.yaml`.
 
+
 Structure:
-```
-/backend        - FastAPI app, Dockerfile
-/frontend       - React app, Dockerfile
-/docker-compose.yml
-/k8s            - Kubernetes manifests (Deployment/Service/Ingress)
-/helm-chart     - Helm chart templates + values
-/.github/workflows/ci-cd.yml - GitHub Actions workflow
-```
+	```
+	/backend        - FastAPI app, Dockerfile
+	/frontend       - React app, Dockerfile
+	/docker-compose.yml
+	/k8s            - Kubernetes manifests (Deployment/Service/Ingress)
+	/helm-chart     - Helm chart templates + values
+	/.github/workflows/ci-cd.yml - GitHub Actions workflow
+	```
 
